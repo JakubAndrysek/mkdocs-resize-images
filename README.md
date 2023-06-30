@@ -1,0 +1,1 @@
+# mkdocs-resize-images
