@@ -81,6 +81,7 @@ plugins:
   - search
   - open-in-new-tab
   - glightbox
+  - social
   - resize-images:
      source-dir: assets-large
      target-dir: assets

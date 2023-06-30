@@ -18,13 +18,15 @@ setup(
     author_email='email@kubaandrysek.cz',
     license='MIT',
     python_requires='>=3.7',
-    install_requires=['mkdocs', 'Pillow'],
+    install_requires=['mkdocs', 'pillow'],
 	extras_require={
 		'dev': [
 			'mkdocs-material',
 			'mkdocs-open-in-new-tab',
 			'mkdocs-glightbox',
 			'mkdocs-git-revision-date-localized-plugin',
+            'cairosvg',
+            'pillow',
 		]
 	},
     classifiers=[
