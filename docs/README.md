@@ -3,7 +3,7 @@
 <p align="center">
 <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FJakubAndrysek%2Fmkdocs-resize-images&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=true"/></a>
 <img src="https://img.shields.io/github/license/JakubAndrysek/mkdocs-resize-images?style=flat-square">
-<img src="https://img.shields.io/github/v/release/JakubAndrysek/mkdocs-resize-images?style=flat-square">
+<img alt="PyPI" src="https://img.shields.io/pypi/v/mkdocs-resize-images?style=flat-square">
 <img src="https://img.shields.io/github/stars/JakubAndrysek/mkdocs-resize-images?style=flat-square">
 <img src="https://img.shields.io/github/forks/JakubAndrysek/mkdocs-resize-images?style=flat-square">
 <img src="https://img.shields.io/github/issues/JakubAndrysek/mkdocs-resize-images?style=flat-square">
@@ -11,7 +11,7 @@
 </p>
 
 This MkDocs plugin finds all folders with a certain name, by default `assets-large`, resizes all images in those folders according to the plugin configuration.
-Then saves the resized images in a different folder, by default `assets`. 
+Then saves the resized images in a different folder, by default `assets`.
 The plugin also supports caching: if a file has not changed since the last time the plugin ran, it won't be processed again.
 
 ## Installation

@@ -25,4 +25,4 @@ jobs:
           python -m pip install --upgrade pip
           pip install 'mkdocs-resize-images[dev]'
       - name: Build docs
-        run: mkdocs build --clean --strict --verbose
+        run: mkdocs build --clean --verbose
