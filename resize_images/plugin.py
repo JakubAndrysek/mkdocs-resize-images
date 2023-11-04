@@ -24,9 +24,10 @@ class ResizeImagesPlugin(BasePlugin):
 		('target-dir', config_options.Type(str, default='assets', required=False)),
 		('extensions', config_options.Type(list, default=['.jpg', '.jpeg', '.png', '.gif', '.svg'], required=False)),
 		('enable_cache', config_options.Type(bool, default=True, required=False)),
+		('debug', config_options.Type(bool, default=False, required=False)),
 	)
 
-	def on_post_build(self, config):
+	def on_files(self, files, config):
 		base_dir = Path(config['docs_dir'])
 		for source_dir in base_dir.rglob(self.config['source-dir']):
 			content_changed = False
@@ -42,13 +43,15 @@ class ResizeImagesPlugin(BasePlugin):
 					if not self.config['enable_cache'] or file_hash not in existing_hashes:
 						content_changed = True
 						self.resize_image(file, target_dir)
+						if self.config['debug']:
+							log.info(f'Resized image {file} to {target_dir}')
 						existing_hashes.append(file_hash)
 
 			if content_changed:
 				self.write_hashes(existing_hashes, hash_file_path)
 
 		log.info(f'Resized images from `{self.config["source-dir"]}` to `{self.config["target-dir"]} with size {self.config["size"]}`')
-		return config
+		return files
 
 	def resize_image(self, file, target_dir):
 		try:

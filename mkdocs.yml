@@ -87,6 +87,7 @@ plugins:
      target-dir: assets
      size: [800, 600]
      enable_cache: True
+     debug: True
 
 
 markdown_extensions:

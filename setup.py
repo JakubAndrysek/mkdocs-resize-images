@@ -8,7 +8,7 @@ def readme():
 # https://pypi.org/project/mkdocs-resize-images/
 setup(
     name='mkdocs-resize-images',
-    version='1.0.1',
+    version='1.0.2',
     description='MkDocs plugin to resize images according to the configuration.',
     long_description=readme(),
     long_description_content_type='text/markdown',

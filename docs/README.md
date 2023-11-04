@@ -2,12 +2,13 @@
 
 <p align="center">
 <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FJakubAndrysek%2Fmkdocs-resize-images&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=true"/></a>
-<img src="https://img.shields.io/github/license/JakubAndrysek/mkdocs-resize-images?style=flat-square">
-<img alt="PyPI" src="https://img.shields.io/pypi/v/mkdocs-resize-images?style=flat-square">
-<img src="https://img.shields.io/github/stars/JakubAndrysek/mkdocs-resize-images?style=flat-square">
-<img src="https://img.shields.io/github/forks/JakubAndrysek/mkdocs-resize-images?style=flat-square">
-<img src="https://img.shields.io/github/issues/JakubAndrysek/mkdocs-resize-images?style=flat-square">
-<img src="https://static.pepy.tech/personalized-badge/mkdocs-resize-images?period=month&units=international_system&left_color=black&right_color=orange&left_text=Downloads">
+<a href="https://github.com/JakubAndrysek/mkdocs-resize-images/blob/main/LICENSE" target="_blank"><img src="https://img.shields.io/github/license/JakubAndrysek/mkdocs-resize-images?style=flat-square"></a>
+<a href="https://pypi.org/project/mkdocs-resize-images/" target="_blank"><img alt="PyPI" src="https://img.shields.io/pypi/v/mkdocs-resize-images?style=flat-square"></a>
+<a href="https://github.com/JakubAndrysek/mkdocs-resize-images/stargazers" target="_blank"><img src="https://img.shields.io/github/stars/JakubAndrysek/mkdocs-resize-images?style=flat-square"></a>
+<a href="https://github.com/JakubAndrysek/mkdocs-resize-images/forks" target="_blank"><img src="https://img.shields.io/github/forks/JakubAndrysek/mkdocs-resize-images?style=flat-square"></a>
+<a href="https://github.com/JakubAndrysek/mkdocs-resize-images/issues" target="_blank"><img src="https://img.shields.io/github/issues/JakubAndrysek/mkdocs-resize-images?style=flat-square"></a>
+<a href="https://github.com/JakubAndrysek/mkdocs-resize-images/discussions" target="_blank"><img src="https://img.shields.io/github/discussions/JakubAndrysek/mkdocs-resize-images?style=flat-square"></a>
+<a href="https://pypistats.org/packages/mkdocs-resize-images" target="_blank"><img src="https://static.pepy.tech/personalized-badge/mkdocs-resize-images?period=month&units=international_system&left_color=black&right_color=orange&left_text=Downloads"></a>
 </p>
 
 This MkDocs plugin finds all folders with a certain name, by default `assets-large`, resizes all images in those folders according to the plugin configuration.
@@ -65,3 +66,5 @@ plugins:
 `extensions`: List of image file extensions to consider for resizing. The plugin will look for images with these extensions in both lower and upper case. Default is `['.jpg', '.jpeg', '.png', '.gif', '.svg']`.
 
 `enable_cache`: Whether to enable caching. If enabled, the plugin will check if a file has changed since the last time the plugin ran, and if not, it won't process the file again. Default is `True`.
+
+`debug`: Option to enable debug output. Default is `False`.
